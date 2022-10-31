@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finding html element by tag name</title>
+</head>
+<body>
+    <H1>FINDING HTML ELEMENT BY TAG NAME</H1>
+    <p >we can also select element by tag name USING<b><i>document.getElementbyTagname</i></b></p>
+    <p>this is second para</p>
+    <p id="demo"></p>
+<script>
+    const user=document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML="this text is first paragraph(index0)"+user[0].innerHTML;
+    document.getElementById("demo").innerHTML="this text is first paragraph(index0)"+user[1].innerHTML;
+    // only last line run in javascript
+</script>
+</body>
+</html>

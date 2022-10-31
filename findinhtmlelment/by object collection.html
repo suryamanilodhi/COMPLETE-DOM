@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finding html element</title>
+</head>
+<body>
+    <h3>finding html element  by using document.form</h3>
+    <form id="frm1">
+        first name:<input type="text" value="enter First name"><br>
+        Last name:<input type="text" value="enter  last name"><br>
+        <br>
+        <input type="button" value="submit">
+       </form>
+       <p>these are the value of each  element  in the form:</p>
+       <p id="demo"></p>
+       <script>
+        const x=document.forms["frm1"];
+        let text="";
+        for(let i=0; i<x.length; i++){
+            text+=x.elements[i].value+"<br>"
+        }
+        document.getElementById("demo").innerHTML=text;
+       </script>
+</body>
+</html>

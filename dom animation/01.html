@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ANIMATION</title>
+    <link rel="stylesheet" href="01.css">
+</head>
+<body>
+    <div id="container">
+        <div id="enimate"></div>
+    </div>
+    <p><button onclick="mymove()">click me</button></p>
+    <script>
+        function mymove(){
+            let id=null;
+            const elem=document.getElementById("enimate");
+            let pos=0;
+            clearInterval(id);
+            id=setInterval(frame,5);
+            function frame(){
+                if(pos==350){
+                    clearInterval(id);
+                }else{
+                    pos++;
+                    elem.style.top=pos+"px";
+                    elem.style.left=pos+"px";
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

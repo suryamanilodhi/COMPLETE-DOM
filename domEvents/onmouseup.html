@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+</head>
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this) "
+    style="background-color:blue; height:120px; width:120px; padding:40px;">click me</div>
+    <script>
+        function mDown(obj){
+            obj.style.backgroundColor="red";
+            obj.innerHTML="Release me"
+        }
+        function mUp(obj){
+            obj.style.backgroundColor="pink"
+            obj.innerHTML="thank you"
+        }
+    </script>
+</body>
+</html>

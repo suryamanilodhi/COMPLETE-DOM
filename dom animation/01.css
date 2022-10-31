@@ -1,0 +1,13 @@
+#container{
+    width:400px;
+    height: 400px;
+    position:relative;
+    background-color:green;
+}
+#enimate{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: red;
+
+}

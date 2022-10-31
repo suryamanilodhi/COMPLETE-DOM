@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+</head>
+<p><b><l>in this example  function is  called from  event handler</l></b></p>
+<body>
+    <h1 onclick="changeText(this)">click on this  is text</h1>
+    <script>
+        function changeText(id){
+            id.innerHTML="oops";
+        }
+    </script>
+</body>
+</html>

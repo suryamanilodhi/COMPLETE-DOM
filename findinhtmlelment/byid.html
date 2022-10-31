@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom start</title>
+</head>
+<body>
+    <!-- finding html elemnt by id -->
+    <!-- <p id="demo"></p> -->
+    <h1>javascript html dom</h1>
+    <p id="first">finding html element by id</p>
+    <p>this is an <b>example of documnet.getElementBYid</b> <i>method</i></p>
+    <p id="second"></p>
+<script>
+    //  document.getElementById("demo").innerHTML="first word";
+    const ele=document.getElementById("first");
+    document.getElementById("second").innerHTML="the text from first para is"+ele.innerHTML;
+    
+</script>
+</body>
+</html>
